@@ -2682,6 +2682,7 @@ class laser_gcode(inkex.Effect):
             if s[1]    == 'move':
                 if isFirst == True:					
                     g += "G1 " + c(si[0]) + "\n" + "G1 Z" + self.options.focus_depth + " F600\n" + tool['gcode before path'] + "\n"
+                    isFirst = False
                 else:
                     g += "G1 " + c(si[0]) + "\n" + tool['gcode before path'] + "\n"
                 lg = 'G00'

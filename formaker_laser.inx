@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
-    <_name>Formaker Laser</_name>
+    <_name>Formaker Laser v1.0.1</_name>
     <id>formakerLaser</id>
 	<dependency type="executable" location="extensions">formaker_laser.py</dependency>
 	<dependency type="executable" location="extensions">inkex.py</dependency>
