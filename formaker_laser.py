@@ -2670,7 +2670,7 @@ class laser_gcode(inkex.Effect):
             self.last_used_tool = None
         print_("working on curve")
         print_("Curve: " + str(curve))
-        g = ""
+        g = "Curve: " + str(curve) + "\n"
 
         lg, f =  'G00', "F%f"%tool['penetration feed']
         penetration_feed = "F%s"%tool['penetration feed'] 
@@ -3129,7 +3129,7 @@ class laser_gcode(inkex.Effect):
         print_("Document height: " + str(doc_height));
         
         points = [[0.,0.,0.],[100.,0.,0.],[0.,100.,0.]]
-        orientation_scale = 3.5433070660
+        orientation_scale = 1.0
         print_("orientation_scale < 0 ===> switching to mm units=%0.10f"%orientation_scale )
 
         points = points[:2]
